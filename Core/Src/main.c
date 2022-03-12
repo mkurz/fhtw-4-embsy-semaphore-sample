@@ -378,7 +378,7 @@ void blink_blue(void *argument)
   for(;;)
   {
 #ifdef USE_SEM
-    if(osSemaphoreAcquire(sem_RGBLED_syncHandle,100)==osOK)
+    if(osSemaphoreAcquire(sem_RGBLED_syncHandle,osWaitForever)==osOK)
     {
 #endif
       HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,GPIO_PIN_RESET);
