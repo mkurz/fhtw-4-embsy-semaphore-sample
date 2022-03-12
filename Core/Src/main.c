@@ -352,7 +352,7 @@ void blink_green(void *argument)
     {
 #endif
       HAL_GPIO_WritePin(GPIOA,GPIO_PIN_8,GPIO_PIN_RESET);
-      osDelay(3000);
+      osDelay(500);
       HAL_GPIO_WritePin(GPIOA,GPIO_PIN_8,GPIO_PIN_SET);
       //osDelay(3000);
 #ifdef USE_SEM
@@ -382,7 +382,7 @@ void blink_blue(void *argument)
     {
 #endif
       HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,GPIO_PIN_RESET);
-      osDelay(5000);
+      osDelay(500);
       HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,GPIO_PIN_SET);
       //osDelay(5000);
 #ifdef USE_SEM
