@@ -359,7 +359,7 @@ void blink_green(void *argument)
       osSemaphoreRelease(sem_RGBLED_syncHandle);
     }
 #endif
-    osDelay(100);
+    //osDelay(100);
   }
   /* USER CODE END blink_green */
 }
