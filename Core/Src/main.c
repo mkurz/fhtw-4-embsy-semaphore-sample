@@ -324,7 +324,7 @@ void blink_red(void *argument)
       HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,GPIO_PIN_RESET);
       osDelay(2000);
       HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,GPIO_PIN_SET);
-      osDelay(2000);
+      //osDelay(2000);
 #ifdef USE_SEM
       osSemaphoreRelease(sem_RGBLED_syncHandle);
     }
@@ -354,7 +354,7 @@ void blink_green(void *argument)
       HAL_GPIO_WritePin(GPIOA,GPIO_PIN_8,GPIO_PIN_RESET);
       osDelay(3000);
       HAL_GPIO_WritePin(GPIOA,GPIO_PIN_8,GPIO_PIN_SET);
-      osDelay(3000);
+      //osDelay(3000);
 #ifdef USE_SEM
       osSemaphoreRelease(sem_RGBLED_syncHandle);
     }
@@ -384,7 +384,7 @@ void blink_blue(void *argument)
       HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,GPIO_PIN_RESET);
       osDelay(5000);
       HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,GPIO_PIN_SET);
-      osDelay(5000);
+      //osDelay(5000);
 #ifdef USE_SEM
       osSemaphoreRelease(sem_RGBLED_syncHandle);
     }
