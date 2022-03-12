@@ -318,7 +318,7 @@ void blink_red(void *argument)
   for(;;)
   {
 #ifdef USE_SEM
-    if(osSemaphoreAcquire(sem_RGBLED_syncHandle,100)==osOK)
+    if(osSemaphoreAcquire(sem_RGBLED_syncHandle,90)==osOK)
     {
 #endif
       HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,GPIO_PIN_RESET);
@@ -348,7 +348,7 @@ void blink_green(void *argument)
   for(;;)
   {
 #ifdef USE_SEM
-    if(osSemaphoreAcquire(sem_RGBLED_syncHandle,100)==osOK)
+    if(osSemaphoreAcquire(sem_RGBLED_syncHandle,90)==osOK)
     {
 #endif
       HAL_GPIO_WritePin(GPIOA,GPIO_PIN_8,GPIO_PIN_RESET);
@@ -378,7 +378,7 @@ void blink_blue(void *argument)
   for(;;)
   {
 #ifdef USE_SEM
-    if(osSemaphoreAcquire(sem_RGBLED_syncHandle,100)==osOK)
+    if(osSemaphoreAcquire(sem_RGBLED_syncHandle,90)==osOK)
     {
 #endif
       HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,GPIO_PIN_RESET);
